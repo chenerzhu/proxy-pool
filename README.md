@@ -38,9 +38,9 @@
 ### IP来源
 代理ip均来自爬虫爬取，有些国内爬取的ip大多都不能用，代理池的ip可用ip大多是国外的ip。爬取的网站有：http://www.xicidaili.com/nn  ，http://www.data5u.com/free/index.shtml  ，https://free-proxy-list.net ，https://www.my-proxy.com/free-proxy-list.html ，http://spys.one/en/free-proxy-list/ ， https://www.proxynova.com/proxy-server-list/ ，https://www.proxy4free.com/list/webproxy1.html ，http://www.gatherproxy.com/ 。
 ### 如何使用
-**前提：** 已经安装JDK1.8环境，MySQL数据库，Redis。
-先使用maven编译成jar,proxy-pool-1.0.jar。
-使用SpringBoot启动方式，启动即可。
+**前提：** 已经安装JDK1.8环境，MySQL数据库，Redis。  
+先使用maven编译成jar,proxy-pool-1.0.jar。   
+使用SpringBoot启动方式，启动即可。   
 ```java
 java -jar proxy-pool-1.0.jar
 ```
