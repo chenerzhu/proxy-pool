@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>ip代理</title>
+    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css?v=1}">
+    <link rel="stylesheet" th:href="@{/css/bootstrap-table.css?v=}">
+    <script type="application/javascript" th:src="@{/js/jquery-3.1.1.min.js?v=}"></script>
+    <script type="application/javascript" th:src="@{/js/bootstrap.min.js?v=}"></script>
+    <script type="application/javascript" th:src="@{/js/bootstrap-table.js?v=}"></script>
+</head>
+<body>
+    <div class="header" style="height: 100px"></div>
+    <div class="content" style="width: 70%;margin: 5px 15% 0px 15%;">
+        <table id="proxy-list" class="table-bordered table-striped"></table>
+        <label class="warning">注：表中响应速度是测速服务器的测试数据，仅供参考。响应速度根据你机器所在的地理位置不同而有差异。</label>
+    </div>
+    <div class="footer" style="height: 50px"></div>
+</body>
+<script type="application/javascript" th:inline="javascript">
+    $('#proxy-list').bootstrapTable({
+        dataType: "json",
+        columns: [{
+            field: 'ip',
+            title: 'IP'
+        }, {
+            field: 'port',
+            title: 'PORT'
+        }, {
+            field: 'type',
+            title: '类型'
+        }, {
+            field: 'useTime',
+            title: '响应速度(ms)'
+        }, {
+            field: 'location',
+            title: '位置'
+        }, {
+            field: 'lastValidateTime',
+            title: '最后验证时间'
+        }, {
+            field: 'anonymity',
+            title: '匿名度'
+        }],
+        data: [[${proxyIpList}]]
+    });
+
+    $("#proxy-list > thead > tr").addClass("info");
+</script>
+</html>

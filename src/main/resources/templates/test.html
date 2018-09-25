@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <script type="application/javascript" th:src="@{/js/jquery-3.1.1.min.js}"></script>
+    <title>ip test...</title>
+</head>
+<body>
+<form action="/test" id="param" method="post">
+    ip：<input type="text" name="ip"/>
+    port：<input type="text" name="port">
+    <input type="button" id="submit" value="test"/>
+</form>
+</body>
+<script>
+    $(document).ready(function () {
+        $("#submit").on({
+            click: function () {
+                $(this).val("testing ...");
+                $.ajax({
+                        url: "/test",
+                        type: "POST",
+                        dataType:"JSON",
+                        data: $("#param").serialize(),
+                        success: function (ret) {
+                            $("#submit").val("test");
+                            alert(ret.message);
+                        }
+                    }
+                );
+            }
+        });
+    })
+</script>
+</html>
