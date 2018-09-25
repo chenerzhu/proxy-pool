@@ -16,9 +16,11 @@
 "port":57677,"requestTime":0,"responseTime":0,
 "type":"https","useTime":3671}],"message":"success"}
 ```
+
 -  通过页面获取代理ip
 通过访问url，如：http://127.0.0.1:8080 返回代理ip列表页面。
-<img width="690" height="400" src="https://github.com/chenerzhu/proxy-pool/blob/master/src/main/resources/static/img/home.PNG"/>  
+<img width="690" height="400" src="https://github.com/chenerzhu/proxy-pool/blob/master/src/main/resources/static/img/home.PNG"/>    
+
 -  提供代理ip测试接口及页面
 通过访问url, 如：http://127.0.0.1:8080/test （get）测试代理ip的可用性；通过接口 http://127.0.0.1:8080/test ]（post  data: {"ip": "127.0.0.1","port":8080} ） 测试代理ip的可用性。
    
