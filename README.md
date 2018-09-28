@@ -3,7 +3,7 @@
 前段时间，写java爬虫来爬网易云音乐的评论。不料，爬了一段时间后ip被封禁了。由此，想到了使用ip代理，但是找了很多的ip代理网站，很少有可以用的代理ip。于是，抱着边学习的心态，自己开发了一个代理ip池。
 
 ### 相关技术及环境
-**技术：** SpringBoot，SpringMVC, Hibernate,  MySQL, Redis , Maven, BootStrap-table，多线程并发   
+**技术：** SpringBoot，SpringMVC, Hibernate,  MySQL, Redis , Maven, Lombok, BootStrap-table，多线程并发   
 **环境：** JDK1.8 , IDEA
 
 ### 实现功能
