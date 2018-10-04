@@ -11,10 +11,23 @@
 -  通过接口获取代理ip
 	通过访问接口，如：http://127.0.0.1:8080/proxyIp 返回代理ip的json格式
 ```json
-{"code":200,"data":[{"available":true,"ip":"1.10.186.214",
-"lastValidateTime":"2018-09-25 20:31:52","location":"THThailand",
-"port":57677,"requestTime":0,"responseTime":0,
-"type":"https","useTime":3671}],"message":"success"}
+{
+    "code":200,
+    "data":[
+        {
+            "available":true,
+            "ip":"1.10.186.214",
+            "lastValidateTime":"2018-09-25 20:31:52",
+            "location":"THThailand",
+            "port":57677,
+            "requestTime":0,
+            "responseTime":0,
+            "type":"https",
+            "useTime":3671
+        }
+    ],
+    "message":"success"
+}
 ```
 
 -  通过页面获取代理ip
